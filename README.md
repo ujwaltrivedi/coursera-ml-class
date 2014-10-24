@@ -3,20 +3,17 @@ Coursera Machine Learning - Andrew Ng
 
 
 # Linear Regression with One Variable
-==================================
-Univariate (Single Variable) Regression Model
-Model: h(x) = theta0 + theta1(x) 
+* Univariate (Single Variable) Regression Model
+* Model: h(x) = theta0 + theta1(x) 
 
 
 ### Feature Scaling (Gradient Decent)
-==================================
 * Get value of all the features in the range of -1 >= 0 <= +1
 	- X0 =  (Value - AvgVal) / (max - min) 
 	- X0 = (#Bedrooms - Avg # Of Bedrooms) / (Max Bedrooms - Min Bedrooms)
 
 
 ### Learning Rate (Gradient Decent)
-===============================
 * Choose learning rate small but not too small
 	- If learning rate too small the convergence will take a lot of iterations and it will take a lot of time to find the minimum
 	- If learning rate too big the convergence may never happen as the iteration may overshoot.
@@ -25,7 +22,6 @@ Model: h(x) = theta0 + theta1(x)
 
 
 ### Feature Selection
-=================
 * Create your own features if necessary
 	- for predicting house price if you have features length and breadth you can create you own feature area as length * breadth
 
@@ -35,23 +31,19 @@ Model: h(x) = theta0 + theta1(x)
 
 
 ### Gradient Decent vs Normal Equation
-==================================
 * Use Gradient Decent if you have too many features (n >= 1000)
 * Normal Equation not good for large (n > 1000) as it may slow down.
 
 
 
 ### Linear Regression (Normal Equation)
-===================================
 * pinv(X'*X)*X'*y
 
 
 
 # Classification
-==============
 
 ### Logistic Regression
-====================
 #### Sigmoid (Logistic) function
 - g (theta' * x)
 - z = theta' * x
@@ -64,7 +56,6 @@ Model: h(x) = theta0 + theta1(x)
 
 
 # Octave Functions
-================
 * Matrix Inverse: 	pinv(X) - psuedo inverse fuunction
 * Matrix Transpose: X'
 * Normal Equation: pinv(X'*X)*X'*y
