@@ -45,9 +45,9 @@ Coursera Machine Learning - Andrew Ng
 
 ### Logistic Regression
 #### Sigmoid (Logistic) function
-- g (theta' * x)
-- z = theta' * x
-- g (z) = 1 / 1 + e ^ -z
+* g (theta' * x)
+	- z = theta' * x
+	- g (z) = 1 / 1 + e ^ -z
 
 * h(x) = P(y = 1|X; theta)
 * P(y = 1|X; theta) + P(y = 0|X; theta) = 1
