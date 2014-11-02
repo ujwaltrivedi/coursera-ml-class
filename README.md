@@ -53,6 +53,15 @@ Coursera Machine Learning - Andrew Ng
 * P(y = 1|X; theta) + P(y = 0|X; theta) = 1
 
 
+#### Cost function
+
+#### Gradient
+
+### Regularization
+
+#### Regularized Cost function
+
+#### Regularized Gradient
 
 
 # Octave Functions
@@ -65,10 +74,12 @@ Coursera Machine Learning - Andrew Ng
 * hist(a) - create histogram
 * eye(4,4) - create identity matx
 * size(A)
+* [m, n] = size(A) - get size of matrix in m,n
 * load(filename)
 * clear varname - deletes the var
 * who - list all var
 * whos - list all var with details
+* theta(2:end,1) - all the rows in theta starting from 2-to-end at col-1
 
 
 
