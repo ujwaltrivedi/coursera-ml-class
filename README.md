@@ -37,35 +37,54 @@ Coursera Machine Learning - Andrew Ng
 
 
 ### Linear Regression (Normal Equation)
-* pinv(X'*X)*X'*y
-
+```
+pinv(X'*X)*X'*y
+```
 
 
 # Classification
 
 ### Logistic Regression
-#### Sigmoid (Logistic) function
-* g (theta' * x)
-	- z = theta' * x
-	- g (z) = 1 / 1 + e ^ -z
 
-* h(x) = P(y = 1|X; theta)
-* P(y = 1|X; theta) + P(y = 0|X; theta) = 1
+### Sigmoid (Logistic) function
+
+```
+g (θ' * x)
+z = θ' * x
+g (z) = 1 / 1 + exp^-z
+```
+
+* h(x) = P(y = 1|X; θ)
+* P(y = 1|X; θ) + P(y = 0|X; θ) = 1
 
 
-#### Cost function
+### Cost function
 
-#### Gradient
+### Gradient
 
-### Regularization
+### Regularization (To avoid overfitting)
 
-#### Regularized Cost function
+#### Keep all the features, but reduce magnitude/values of parameters .
+- Works well when we have a lot of features, each of which contributes a bit to predicting .
 
-#### Regularized Gradient
+#### What if λ is set to an extremely large value (perhaps for too large for our problem, say  λ - 10 <sup>10</sup> )?
+- Algorithm works fine; setting to be very large can’t hurt it
+- Algortihm fails to eliminate overfitting.
+- Algorithm results in underfitting. (Fails to fit even training data well).
+- Gradient descent will fail to converge.
+
+### Regularized Cost function
+
+### Regularized Gradient
+
+
+
+
 
 
 # Octave Functions
-* Matrix Inverse: 	pinv(X) - psuedo inverse fuunction
+```
+* Matrix Inverse: pinv(X) - psuedo inverse function
 * Matrix Transpose: X'
 * Normal Equation: pinv(X'*X)*X'*y
 * ones(3,3) - create 3x3 mat with all 1
@@ -80,7 +99,7 @@ Coursera Machine Learning - Andrew Ng
 * who - list all var
 * whos - list all var with details
 * theta(2:end,1) - all the rows in theta starting from 2-to-end at col-1
-
+```
 
 
 
