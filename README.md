@@ -11,6 +11,14 @@ Coursera Machine Learning - Andrew Ng
 * Get value of all the features in the range of -1 >= 0 <= +1
 	- X0 =  (Value - AvgVal) / (max - min) 
 	- X0 = (#Bedrooms - Avg # Of Bedrooms) / (Max Bedrooms - Min Bedrooms)
+	
+	```
+		mu = mean(X);
+		X_norm = bsxfun(@minus, X, mu);
+
+		sigma = std(X_norm);
+		X_norm = bsxfun(@rdivide, X_norm, sigma);
+	```
 
 
 ### Learning Rate (Gradient Decent)
